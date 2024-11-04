@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coaching Class Website</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to [Kale coching class]</h1>
+    </header>
+
+    <!-- Navbar -->
+    <nav>
+        <button class="toggle-btn" onclick="toggleMenu()">☰</button>
+        <div class="nav-links" id="navLinks">
+            <a href="#">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Your Success Begins Here!</h2>
+        <p>Join our classes to excel in your studies. We offer expert guidance and personalized support.</p>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="container">
+        <h2>Available Courses</h2>
+        <div class="course" onclick="showVideo('HTML')">
+            <h3>HTML Course</h3>
+            <p>Learn the basics of HTML.</p>
+        </div>
+        <div class="course" onclick="showVideo('CSS')">
+            <h3>CSS Course</h3>
+            <p>Master CSS styling and layouts.</p>
+        </div>
+        <div class="course" onclick="showVideo('JavaScript')">
+            <h3>JavaScript Course</h3>
+            <p>Become proficient in JavaScript programming.</p>
+        </div>
+    </section>
+   <!-- Playlist Embed Section -->
+   <section id="video-section">
+    <h2>Course Videos</h2>
+    <div id="video-container">
+        <!-- YouTube playlist will load here based on selection -->
+        <iframe id="video-frame" width="100%" height="400" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+</section>
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are dedicated to providing the best education and guidance for students. Our team consists of experienced teachers focused on your success.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: kaletechservices@gmail.com</p>
+        <p>Phone: 8788428240</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 [kale Coaching classes]. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,234 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background: #005f99;
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004080;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #00b3e6;
+}
+
+/* Toggle Button */
+.toggle-btn {
+    display: none;
+    font-size: 1.5rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #004080;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .nav-links a {
+        padding: 10px 0;
+        border-top: 1px solid #00b3e6;
+    }
+
+    .nav-links a:last-child {
+        border-bottom: 1px solid #00b3e6;
+    }
+
+    .toggle-btn {
+        display: inline-block;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+}
+
+/* Main Content */
+.container {
+    padding: 20px;
+}
+
+/* Home Section */
+#home {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f0f8ff;
+}
+
+#home h2 {
+    color: #005f99;
+}
+
+/* Courses Section */
+#courses {
+    padding: 50px 20px;
+}
+
+.course {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* About Section */
+#about {
+    background-color: #f0f8ff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+/* Contact Form Styling */
+#contact-form {
+    padding: 40px 20px;
+    max-width: 500px;
+    margin: auto;
+}
+
+#contact-form h2 {
+    color: #005f99;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #005f99;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #004080;
+}
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+    #contact-form {
+        padding: 20px;
+    }
+}
+/* Courses Section */
+#courses {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.course {
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.course:hover {
+    background-color: #e0e0e0;
+}
+
+/* Video Section */
+#video-section {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+#video-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+#video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
